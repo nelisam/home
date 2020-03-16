@@ -6,36 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Navbar</title>
+        <title>Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <!-- Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
     </head>
     <body>
-
-    <!--
-        <nav>
-            <div class="logo">
-                <img src="images/maven_academy.png" alt="images">               
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="Home">Home</a>
-                </li>
-                <li>
-                    <a href="Why_Us">Course</a>
-                </li>
-                <li>
-                    <a href="ContactUs">Contact Us</a>
-                </li>
-                <li>
-                    <a href="Cart">Cart</a>
-                </li>
-
-            </ul>
-        </nav>-->
             
         <header>
                 <nav class="navbar">
@@ -123,11 +103,75 @@
             </div>
         </section>
         <section class="our-courses"></section>
-        <section class="career-services"></section>
+        <section class="career-services">
+            <div class="container">
+                <h2>Career Services</h2>
+                <p>
+                        Learning to code is one thing, finding your place in the industry is quite another. With the knowledge that our graduates are well equipped for the working world, our Career Services aim to help you find a job once your programme is complete. With your hard work and our network, your future is bright!
+                </p>
+            </div>
+            <div class="container">
+                    <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/companies-logo/logo-associated-media.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-bounty-brands.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-coast2coast.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-da.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-essential-med.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-flash.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-hertex.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-imperial.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-motorhappy.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-mtn.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-nedbank.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-pearson.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-pep.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-vuma.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-weylandts.png" alt="">
+                            </div>
+                            <div class="item">
+                                    <img src="images/companies-logo/logo-zando.png" alt="">
+                            </div>
+                    </div>
+            </div>
+            <div class="container">
+                    <button type="button" class="btn btn-primary">Find Out More</button>
+            </div>
+
+        </section>
         <section class="what-they-think"></section>
         <section class="get-pumped">
             <div class="container">
                 <div class="row">
+                    <div class="col-7 mx-auto">
                     <img src="images/contact-banner.png" alt="">
                     <h2>Get pumped, get skilled</h2>
 
@@ -148,6 +192,7 @@
                         <b>Say Hello:</b>
                         <a href="#">hello@themavenacademy.one</a>
                     </p>
+                </div>
                 </div>
             </div>
         </section>
@@ -222,9 +267,25 @@
             </div>
             </div>
         </footer>  
-<!-- icon link use later -->
-        <!-- <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex justify-content-center">
-            <img src="images/instagram.svg" alt="">
-        </a> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
     </body>
 </html>
