@@ -116,6 +116,27 @@ a.active {
     padding: 15px;
 }
 
+/* ----------------------------------------section what-they-think------------------------------------------*/
+.what-they-think {
+    background-color:#36414c;
+    padding: 100px 0; 
+}
+
+.what-they-think h2 {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.what-they-think p {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.blue-text {
+    color: #5b9de3;
+}
+
+
 /* ----------------------------------------section contact------------------------------------------*/
 .get-pumped {
     text-align: center;
@@ -125,6 +146,8 @@ a.active {
 .get-pumped h2 {
     font-size: 45px;
 }
+
+
 
 
 /* ----------------------------------------footer-----------------------------------------*/
