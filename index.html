@@ -16,38 +16,70 @@
         <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
     </head>
     <body>
-            
-        <header>
-                <nav class="navbar">
-                    <img src="images/maven_academy.png" alt="images">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
+
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <img src="images/maven_academy.png" alt="images">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto justify-content-end">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Course</a>
+                        <a class="nav-link" href="courses.html">
+                          Courses
+                        </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact_us.html">
+                            Contact Us
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                    <li class="nav-item cart">
+                      <a class="nav-link" href="cart.html">
+                        Cart
+                      </a>
                     </li>
+                    <li class="nav-item cart">
+                        <a class="nav-link" href="cart.html">
+                          <ion-icon name="basket-outline"></ion-icon><span>0</span>
+                        </a>
+                      </li>
                   </ul>
-                </nav>
+                </div>
+              </nav>
         </header>
 
-        <section class = "home">
-            <h1>Next level training in</h1>
-            <img src="images/tech-mavens.png" alt="">
-            <p>Take your tech career to the next level with our immersive software development programmes</p>
-            <button type="button" class="btn btn-primary">Find Out More</button>
-        </section>
+        <section class = "home bg-light-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1>Next level training in
+                            <div
+                               class="txt-rotate"
+                               data-period="3000"
+                               data-rotate='[ "User interface design.", "Mobile development.", "Software development.", "Web development.", "User Experience" ]'>
+                            <span></span></div>
+                          </h1>
+                          <img src="images/tech-mavens.png" alt="">
+                          <p>Take your tech career to the next level with our immersive software development programmes</p>
+                        
+                          <div>
+                            <a href="index.html" class="button big-btn">Find out more</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+          </section>
             
         <section class="why-us">
             <div class="container">
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-lg-6 left">
                    <h2>Why Maven Academy?</h2> 
 
                    <p>
@@ -57,44 +89,44 @@
                    <p>
                        After two decades of building bespoke software solutions, and from our own hands-on coding experience, we’ve crafted a comprehensive software development curriculum that equips you for today’s complex technical work environments and prepares you for the future with exposure to cutting-edge technology.
                     </p>
-                    <button type="button" class="btn btn-primary">Read More</button>
+                    <a href="index.html" class="button big-medium">Read more</a>
                   </div>
-                  <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-2 icon-bg">
-                            <img src="images/career-changers.svg" alt="">
-                        </div>
-                        <div class="col-sm-10">
-                            <h5>Learn by creating</h5>
+                  <div class="col-lg-6 right">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <div class=" icon-bg d-flex justify-content-center align-items-center">
+                                <img src="images/career-changers.svg" class="mr-3" alt="">
+                            </div>
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Learn by creating</h5>
                             <p>
                                 Master the art of code by working on projects that reflect the kind of work you will carry out for future employers and clients.
                             </p>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-sm-2 icon-bg">
-                            <img src="images/career-boosters.svg" alt="">
-                        </div>
-                        <div class="col-sm-10">
-                        <h5>Expert coaching</h5>
-                            <p>
-                            Adopt the best-practice development techniques with on-demand access to mentors bringing their global tech exposure directly to you. Consistent feedback and mentorship refine your skills until you are comfortable producing efficient, production-grade code without hesitation.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-2 icon-bg">
-                            <img src="images/recent-graduates.svg" alt="">
-                        </div>
-                        <div class="col-sm-10">
-                            <h5>Internship Programme</h5>
+                          </div>
+                        </li>
+                        <li class="media my-4">
+                            <div class=" icon-bg d-flex justify-content-center align-items-center">
+                                <img src="images/career-boosters.svg" class="mr-3" alt="">
+                            </div>
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Expert coaching</h5>
+                                <p>
+                                Adopt the best-practice development techniques with on-demand access to mentors bringing their global tech exposure directly to you. Consistent feedback and mentorship refine your skills until you are comfortable producing efficient, production-grade code without hesitation.
+                                </p>
+                          </div>
+                        </li>
+                        <li class="media">
+                            <div class=" icon-bg d-flex justify-content-center align-items-center">
+                                <img src="images/recent-graduates.svg" class="mr-3" alt="">
+                            </div>
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Internship Programme</h5>
                             <p>
                                 Don’t struggle with the job hunt! Hit the ground sprinting with our exclusive platform that allows you to Work, Learn, and Earn at the same time.
                             </p>
-                        </div>
-                      </div>
+                          </div>
+                        </li>
+                      </ul>
                   </div>
                 </div>
               </div>
@@ -102,7 +134,96 @@
                 <p></p>
             </div>
         </section>
-        <section class="our-courses"></section>
+        <section class="our-courses bg-light-blue">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Courses</h2>
+                </div>
+                <div class="text-center">
+                    <p>
+                        Immersive training programs aimed at accelerating your career in tech, regardless of your experience level. We meet you where you’re at, and support you far beyond your goals!
+                    </p>
+                </div>
+                
+                <div class="flex-container">
+                    <div class="owl-one owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card text-center">
+                                <a href="">Become a Full Stack Web Developer</a>
+                                <div>
+                                    <img src="images/webdeveloper.png">
+                                </div>
+                                <div>
+                                    12 weeks - In classroom
+                                </div>
+                                <div>
+                                    <p>Ideal for programmers with a fundamental knowledge of coding who want to enhance their skills and take their careers to the next level. Our all-inclusive, full-stack web development programme teaches you to build dynamic, data-driven web applications using an entire workshop of progressive tech.</p>
+                                    <p><strong>Learn;</strong> Advanced HTML, SCSS, Material Design, Angular 8, Node.js, Mongo DB, Express.</p>
+                                </div>
+                                <div>
+                                    <a href="index.html" class="button medium-btn">Read more</a>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card text-center">
+                                <a href="">Become a Front End Developer</a>
+                                <div>
+                                    <img src="images/frontend-dev.png" alt="Avatar" >
+                                </div>
+                                <div>
+                                    4 Week Course - In classroom
+                                </div>
+                                <div>
+                                    <p>
+                                        A fully immersive on-site course providing an introduction to HTML, CSS, and JavaScript for beginners. The course is Ideal for individuals with zero knowledge of HTML, CSS, and JavaScript who want to begin learning the skills necessary to work in this field
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="index.html" class="button medium-btn">Read more</a>
+                                </div>
+                            
+                              </div>
+                        </div>
+                        <div class="item">
+                            <div class="card text-center grey coming-soon">
+                                <a href="">Become a Ui/Ux Designer</a>
+                                <div>
+                                    <img src="images/ui-ux-designer.png" alt="Avatar" >
+                                </div>
+                                <div>
+                                    4 weeks - In classroom
+                                </div>
+                                <div>
+                                    <a href="index.html" class="button medium-btn">Coming soon</a>
+                                </div>
+                            
+                              </div>
+                        </div>
+                        <div class="item">
+                            <div class="card text-center grey coming-soon">
+                                <a href="">Become a Java Spring Boot Developer</a>
+                                <div>
+                                    <img src="images/spring-boot-dev.png" alt="Avatar">
+                                </div>
+                                <div>
+                                    12 weeks - In classroom
+                                </div>
+                                <div>
+                                    <a href="index.html" class="button medium-btn" aria-disabled="true">Coming soon</a>
+                                </div>
+                            
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+       
         <section class="career-services">
             <div class="container">
                 <h2>Career Services</h2>
@@ -110,66 +231,33 @@
                         Learning to code is one thing, finding your place in the industry is quite another. With the knowledge that our graduates are well equipped for the working world, our Career Services aim to help you find a job once your programme is complete. With your hard work and our network, your future is bright!
                 </p>
             </div>
+            
             <div class="container">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-two owl-carousel owl-theme">
                             <div class="item">
-                                <img src="images/companies-logo/logo-associated-media.png" alt="">
+                                    <img src="images/companies-logo/logo-flash.png" class="grey" alt="">
                             </div>
                             <div class="item">
-                                    <img src="images/companies-logo/logo-bounty-brands.png" alt="">
+                                    <img src="images/companies-logo/logo-nedbank.png" class="grey"  alt="">
                             </div>
                             <div class="item">
-                                    <img src="images/companies-logo/logo-coast2coast.png" alt="">
+                                    <img src="images/companies-logo/logo-vuma.png" class="grey"  alt="">
                             </div>
                             <div class="item">
-                                    <img src="images/companies-logo/logo-da.png" alt="">
+                                    <img src="images/companies-logo/logo-zando.png" class="grey"  alt="">
                             </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-essential-med.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-flash.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-hertex.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-imperial.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-motorhappy.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-mtn.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-nedbank.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-pearson.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-pep.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-vuma.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-weylandts.png" alt="">
-                            </div>
-                            <div class="item">
-                                    <img src="images/companies-logo/logo-zando.png" alt="">
-                            </div>
+                            <div class="item"></div>
                     </div>
             </div>
+
             <div class="container">
-                    <button type="button" class="btn btn-primary">Find Out More</button>
+                <a href="index.html" class="button small-btn">Find out more</a>
             </div>
 
         </section>
         <section class="what-they-think">
             <div class="container">
-                <div class="owl-carousel">
+                <div class="owl-three owl-carousel owl-theme">
                     <div class="item">
                         <div class="row ">
                             <div class="col-5">
@@ -204,7 +292,7 @@
                     </div>
                 </div>
             </div> 
-        </section>
+        </section> 
         <section class="get-pumped">
             <div class="container">
                 <div class="row">
@@ -304,25 +392,71 @@
             </div>
             </div>
         </footer>  
+<script src="javascript/main.js"></script>
+<script src="javascript/typingeffect.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="javascript/owl.carousel.min.js"></script>
 <script>
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
+    $(document).ready(function(){
+    $('.owl-one').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
         }
-    }
-})
-</script> 
+    });
+
+    $('.owl-two').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+    $('.owl-three').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    $( ".owl-next").html('<img src="images/arrow-right.svg" />');
+});
+
+
+</script>
     </body>
 </html>

@@ -1,5 +1,13 @@
- @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
+
+* {
+    font-family: 'Titillium Web', sans-serif;   
+}
+
+section {
+    padding: 80px;
+}
 /* header, 
 section,
 aside, 
@@ -61,22 +69,73 @@ header {
 
 /* ----------------------------------------nav--------------------------------------------*/
 
-a {
-    padding: 24px 58px 26px 0;
+header a {
     color: #cfd8dd;
     text-decoration: none;
-} 
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    
+    display: inline-block;
+    padding: 24px 58px 26px 0;
+    position: relative;
+  }
+  header a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5b9de3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  header a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
-a:hover {
-  text-decoration: underline;
-  color: #5b9de3;
+  nav {
+    color: #cfd8dd;
+    text-decoration: none;
+    
+    
+    display: inline-block;
+    padding: 24px 58px 26px 0;
+    position: relative;
+  }
+
+  nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5b9de3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav a:hover:after { 
+     
+    left: 0; 
+  }
+
+.cart ion-icon {
+ background-color: #cfd8dd;
+ border-radius: 50%;
+ height: 30px;
+ width: 30px;
 }
 
-a.active {
-  text-decoration: underline;
-  color: white;
+.cart span {
+    background-color: #cfd8dd; 
+    border-radius: 50%; 
+    vertical-align: top;
+    margin-left: -1.5px;
 }
-
 /* ----------------------------------------section----------------------------------------*/
 .home {
     text-align: center;
@@ -89,6 +148,69 @@ a.active {
 }
 
 
+.bg-light-blue {
+    background-color: rgba(91, 157, 227, 0.08);
+  }
+  
+span {
+    color: #5b9de3;
+    font-weight: 600;
+  }
+
+  /* -----------------------------BUTTON--------------------------------- */
+
+
+  .button {
+    background-color:#5b9de3;
+    border-radius:40px;
+    -webkit-border-radius: 40px;
+    -moz-box-border-radius: 40px;
+    -o-border-radius: 40px;
+    border:2px solid #5b9de3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-size:18px;
+    padding: 10px 30px 12px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b9de3;
+  }
+  .button:hover {
+    background-color:#ffffff;
+    border: 2px solid #60a0e3;
+    color: #5b9de3;
+    text-decoration:none;
+  }
+  .button:active {
+    position:relative;
+    top:1px;
+  }
+
+
+
+   /*-------------------------------------BUTTON SIZES-------------------------------------*/
+
+  .small-btn {
+    min-width: 150px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 14px;
+  }
+
+  .medium-btn {
+    max-width: 300px;
+    width: 100%;
+  } 
+
+  .big-btn {
+    max-width: 330px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
 /* ----------------------------------------section WHY US----------------------------------------*/
 .why-us {
     padding: 80px 0 80px 0;
@@ -99,14 +221,18 @@ a.active {
     font-weight: normal;
 }
 
-.why-us p {
-    font-family: "Titillium";
+/* .why-us p {
+    font-family: "Titillium Web', sans-serif";
     color: #343d42;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.44
-}
+} */ 
 
+
+.media-body {
+    padding: 20px;
+}
 .icon-bg {
     background-color: #5b9de3;
     border-radius: 8px;
@@ -116,6 +242,20 @@ a.active {
     padding: 15px;
 }
 
+.right {
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
+    border-radius: 5px;
+}
+
+/* ----------------------------------------section Career Services----------------------------------------*/
+
+
+.grey {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
 /* ----------------------------------------section what-they-think------------------------------------------*/
 .what-they-think {
     background-color:#36414c;
@@ -147,8 +287,98 @@ a.active {
     font-size: 45px;
 }
 
+.form-control {
+    border-radius:40px;
+}
 
 
+.breadcrumb {
+    padding: 0rem;
+    margin-bottom: 1.5rem;
+    background-color: transparent !important;
+  }
+
+
+
+
+/* -----------------------------------------COURSES----------------------------------------- */
+.content {
+    padding: 20px;
+}
+
+
+.emails {
+    padding: 20px;
+}
+
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content: space-around
+  }
+  .item {
+    flex: 1 0 auto;
+    margin: 10px;
+  }
+
+.card {
+    padding: 25px;
+}
+  
+.coming-soon {
+    position: relative;
+    
+  }
+  
+.coming-soon::before {
+    content: "";
+    position: absolute;
+    background: url(../images/comming-soon.svg) no-repeat top right;
+    width: 100%;
+    height: 25%;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+/* -----------------------------------------COURSES----------------------------------------- */
+
+.courses {
+    background-color: #36414c;
+    color: #cfd8dd;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.courses-image {
+    margin-bottom: 20px;
+}
+
+.titles {
+    padding: 1.5rem;
+}
+
+.text-blue {
+    color: #5b9de3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text-black {
+    color: #343d42;
+}
+
+.box a {
+    text-decoration: none;
+}
 
 /* ----------------------------------------footer-----------------------------------------*/
 
@@ -205,6 +435,98 @@ a.active {
     margin: 0px 5px 0px 5px;
 
 }
+
+
+
+/*-----------------------CART PAGE---------------------------*/
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+} 
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.cartTotalContainer {
+    display: block;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.cartTotalTitle {
+    width: 30%;
+}
+
+.cartTotal {
+    width: 10%;
+}
+
 
 
 
